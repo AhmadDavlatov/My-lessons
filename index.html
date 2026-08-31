@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YtYt - Школа программирования</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316', // Оранжевый (кнопки)
+                        secondary: '#0ea5e9', // Синий (логин)
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Шапка -->
+    <header class="bg-[#f0f4f8] py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2 text-2xl font-bold">
+                Y<span class="text-primary">t</span>Y<span class="text-primary">t</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+                <a class="hover:text-gray-900">Чему вы научитесь</a>
+                <a class="hover:text-gray-900">Процесс обучения</a>
+                <a class="hover:text-gray-900">Стоимость</a>
+                <a class="hover:text-gray-900">Контакты</a>
+            </nav>
+            <div class="hidden md:flex items-center gap-6">
+                <a class="text-sm font-medium text-gray-600">Регистрация</a>
+                <button class="bg-secondary text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-600 transition">Войти</button>
+            </div>
+            <!-- Бургер для мобильных -->
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="bg-[#f0f4f8] py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    Школа <span class="text-primary">{программирования}</span><br>
+                    для тех, кому нужны<br>
+                    реальные навыки,<br>
+                    а не просто сертификат
+                </h1>
+                <p class="text-gray-500 text-lg mb-8">
+                    Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
+                </p>
+                <button class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-orange-600 transition flex items-center gap-2">
+                    Пройти тестирование <span>↗</span>
+                </button>
+            </div>
+            <div class="flex justify-center">
+                <!-- Картинка героя -->
+                <img src="https://placehold.co/600x450/e2e8f0/475569?text=Hero+Illustration" alt="Программирование" class="w-full h-auto object-contain">
+            </div>
+        </div>
+    </section>
+
+    <!-- Какие технологии -->
+    <section class="py-16 px-6 bg-white">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Какие технологии вы изучите:</h2>
+        <div class="max-w-6xl mx-auto bg-[#eef4f9] rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <!-- Картинка человека за столом -->
+                <img src="https://placehold.co/500x400/e2e8f0/475569?text=Student+Desk" alt="Студент" class="w-full h-auto rounded-xl">
+            </div>
+            <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                <span class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold">Язык программирования Python</span>
+                <span class="bg-orange-400 text-white px-6 py-3 rounded-full font-semibold">Сети</span>
+                <span class="bg-red-400 text-white px-6 py-3 rounded-full font-semibold">Базы данных</span>
+                <span class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold">Фреймворки Flask и Django</span>
+                <span class="bg-sky-400 text-white px-6 py-3 rounded-full font-semibold">Отладка и тестирование</span>
+                <span class="bg-slate-600 text-white px-6 py-3 rounded-full font-semibold">Docker</span>
+                <span class="bg-purple-400 text-white px-6 py-3 rounded-full font-semibold">Git</span>
+                <p class="w-full mt-4 font-bold text-lg text-slate-700">Это необходимый минимум для современного backend-разработчика</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="bg-[#f0f4f8] py-20 px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Обучение в YtYt – это<br>удобно и результативно</h2>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I1" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Огромное количество практики</h3>
+                <p class="text-sm text-gray-500">Более 500 самостоятельных заданий и 20 полноценных больших проектов</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I2" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Современные методики обучения</h3>
+                <p class="text-sm text-gray-500">Спиральное обучение: погружение в материал постепенно, виток за витком</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I3" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Простое и понятное изложение</h3>
+                <p class="text-sm text-gray-500">Вместо заумных терминов — примеры из реального мира</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I4" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Гибкий график занятий</h3>
+                <p class="text-sm text-gray-500">Учиться в любое время и в удобном для вас темпе</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center md:col-span-1 lg:col-span-2">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I5" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Прямая связь с опытными программистами</h3>
+                <p class="text-sm text-gray-500">Задавайте вопросы и отправляйте свой код на проверку</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I6" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Оплата небольшими частями</h3>
+                <p class="text-sm text-gray-500">Платите только за тот материал, который сейчас изучаете</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=I7" class="mx-auto mb-4" alt="Иконка">
+                <h3 class="font-bold mb-2">Быстрый и легкий возврат</h3>
+                <p class="text-sm text-gray-500">Если передумаете учиться — вернем деньги за 3 рабочих дня</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как происходит обучение (Видео) -->
+    <section class="bg-[#f0f4f8] py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Как происходит обучение на YtYt?</h2>
+            <p class="text-gray-500 mb-12">Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.</p>
+            <!-- Картинка платформы/видео -->
+            <img src="https://placehold.co/800x450/e2e8f0/475569?text=Video+Player" alt="Платформа" class="w-full h-auto rounded-2xl shadow-lg">
+        </div>
+    </section>
+
+    <!-- Шаги (01, 02, 03) -->
+    <section class="py-16 px-6 bg-[#f0f4f8]">
+        <div class="max-w-7xl mx-auto bg-white rounded-3xl p-10 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h2 class="text-5xl font-bold text-sky-400 mb-4">01</h2>
+                <h3 class="text-xl font-bold mb-3">Весь материал разбит на небольшие уроки</h3>
+                <p class="text-gray-500 text-sm">Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold text-sky-400 mb-4">02</h2>
+                <h3 class="text-xl font-bold mb-3">Обучение через практику</h3>
+                <p class="text-gray-500 text-sm">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold text-sky-400 mb-4">03</h2>
+                <h3 class="text-xl font-bold mb-3">Нет ограничений по времени</h3>
+                <p class="text-gray-500 text-sm">Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</p>
+            </div>
+            
+            <div class="md:col-span-3 flex flex-col md:flex-row items-center gap-6 mt-8 bg-gray-50 p-6 rounded-xl justify-between">
+                <button class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-orange-600 transition w-full md:w-auto">Начать обучение ↗</button>
+                <p class="text-center md:text-left text-sm font-semibold text-gray-700">Попробуйте первые уроки бесплатно, но нужно пройти тестирование</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Помощь и методология -->
+    <section class="py-16 px-6 bg-[#f0f4f8]">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-2xl p-8">
+                <!-- Картинка поддержки -->
+                <img src="https://placehold.co/400x300/e2e8f0/475569?text=Support" alt="Поддержка" class="w-full h-auto">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Помощь и поддержка</h2>
+                    <p class="text-gray-600 mb-4">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
+                    <p class="text-gray-600">Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-2xl p-8">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4">Методика обучения</h2>
+                    <p class="text-gray-600">Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изучение темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.</p>
+                </div>
+                <!-- Картинка кодинга -->
+                <img src="https://placehold.co/400x300/e2e8f0/475569?text=Coding" alt="Методика" class="order-1 md:order-2 w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Стоимость обучения -->
+    <section class="py-20 px-6 bg-white">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Стоимость обучения</h2>
+        <div class="max-w-5xl mx-auto text-center text-sm text-gray-600 mb-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=B" class="mb-4" alt="Блоки">
+                <p>Весь курс разбит на несколько блоков. Оплата поэтапная: вы платите только за тот блок, который сейчас проходите.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=P" class="mb-4" alt="Рассрочка">
+                <p>Любой из блоков вы можете оплатить в рассрочку</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/60x60/e2e8f0/475569?text=R" class="mb-4" alt="Возврат">
+                <p>Если передумаете учиться, то возврат можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.</p>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto overflow-x-auto">
+            <table class="w-full text-left border-collapse bg-white shadow-sm rounded-2xl overflow-hidden">
+                <thead>
+                    <tr class="bg-gray-50 text-sky-400 font-bold text-sm uppercase">
+                        <th class="p-4">Блок</th>
+                        <th class="p-4">Стоимость (₽)</th>
+                        <th class="p-4">Расчетное время обучения (мес.) *</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Введение в программирование</td>
+                        <td class="p-4 text-gray-700">Бесплатно</td>
+                        <td class="p-4 text-gray-700">0.5</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Основы программирования на Python</td>
+                        <td class="p-4 text-gray-700">9 900</td>
+                        <td class="p-4 text-gray-700">1</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Python, продвинутый уровень</td>
+                        <td class="p-4 text-gray-700">14 900</td>
+                        <td class="p-4 text-gray-700">2.5</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Сети + фреймворк Flask</td>
+                        <td class="p-4 text-gray-700">14 900</td>
+                        <td class="p-4 text-gray-700">2.5</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Базы данных</td>
+                        <td class="p-4 text-gray-700">14 900</td>
+                        <td class="p-4 text-gray-700">2</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Фреймворк Django</td>
+                        <td class="p-4 text-gray-700">14 900</td>
+                        <td class="p-4 text-gray-700">2</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-4 text-gray-700">Разработка «боевого» проекта</td>
+                        <td class="p-4 text-gray-700">9 900</td>
+                        <td class="p-4 text-gray-700">1.5</td>
+                    </tr>
+                    <tr class="bg-gray-100 font-bold">
+                        <td class="p-4">Итого</td>
+                        <td class="p-4">79 400</td>
+                        <td class="p-4">12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="max-w-4xl mx-auto text-left text-xs text-gray-400 mt-4">* если заниматься уделяется около 20 часов в неделю</p>
+    </section>
+
+    <!-- Финальный CTA -->
+    <section class="py-16 px-6 bg-[#f0f4f8]">
+        <div class="max-w-6xl mx-auto bg-[#e6f2f7] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <!-- Мегафон -->
+                <img src="https://placehold.co/80x80/e2e8f0/475569?text=Meg" class="w-16 h-16" alt="Мегафон">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-700 font-medium">Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</p>
+                </div>
+            </div>
+            <button class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-orange-600 transition shrink-0">Начать обучение ↗</button>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-[#f0f4f8] py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 text-2xl font-bold mb-6">
+                    Y<span class="text-primary">t</span>Y<span class="text-primary">t</span>
+                    <span class="text-sm font-normal text-gray-500">Школа программирования</span>
+                </div>
+                <div class="flex gap-4">
+                    <img src="https://placehold.co/30x30/333/fff?text=IG" alt="Instagram" class="w-8 h-8 cursor-pointer rounded">
+                    <img src="https://placehold.co/30x30/333/fff?text=VK" alt="VK" class="w-8 h-8 cursor-pointer rounded">
+                    <img src="https://placehold.co/30x30/333/fff?text=FB" alt="Facebook" class="w-8 h-8 cursor-pointer rounded">
+                    <img src="https://placehold.co/30x30/333/fff?text=YT" alt="YouTube" class="w-8 h-8 cursor-pointer rounded">
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-3 text-sm text-gray-600 font-medium">
+                <a class="hover:text-gray-900">Чему вы научитесь</a>
+                <a class="hover:text-gray-900">Процесс обучения</a>
+                <a class="hover:text-gray-900">Стоимость</a>
+                <a class="hover:text-gray-900">Контакты</a>
+                <a class="hover:text-gray-900">Регистрация</a>
+            </div>
+
+            <div class="text-sm text-gray-600">
+                <a href="tel:+74993489396" class="block text-sky-400 font-bold mb-2">+7 (499) 348 93 96</a>
+                <a href="mailto:info@ytyt.ru" class="block text-sky-400 font-bold mb-6">info@ytyt.ru</a>
+                <p class="mt-4">ИП Уваров Т. А.</p>
+                <p class="mt-1">ИНН 365226229809 ОГРНИП</p>
+                <p class="mt-1">315745200001358</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
